@@ -1,8 +1,8 @@
 import numpy as np
 import cv2 as cv
 
-wajah = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
-mata = cv.CascadeClassifier('haarcascade_eye.xml')
+wajah = cv.CascadeClassifier(r'model\haarcascade_frontalface_default.xml')
+mata = cv.CascadeClassifier(r'model\haarcascade_eye.xml')
 
 img = cv.imread('hash.jpg')
 img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
